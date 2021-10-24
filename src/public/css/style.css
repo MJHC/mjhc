@@ -1,7 +1,19 @@
+/*
+    #2E3441
+    #3B4253 
+    #C16069
+    #A2BF8A
+    #EDCC87
+    #80A0C2
+    #B58DAE
+    #86C0D1
+    #E5E9F0
+*/
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mitr', sans-serif;
 }
 
 body{
@@ -9,21 +21,43 @@ body{
 }
 
 .content{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+    width: 100vw;
     color: #E5E9F0;
 }
 
 h1{
-    position: absolute;
+    font-size: 2vw;
+    user-select: none;
+}
+
+h3{
+    font-size: 1vw;
+    user-select: none;
 }
 
 .colors{
     height: 100vh;
-    width: 5vw;
-    background-color: aliceblue;
+    width: 1vw;
     float: left;
+}
+
+@media (orientation: portrait) {
+    .colors{
+        height: 3vh;
+        width: 100vw;
+    }
+
+    h1{ 
+        font-size: 7vw;
+        background-color: #2E3441;
+    }
+
+    h3{
+        font-size: 5vw;
+    }
 }
