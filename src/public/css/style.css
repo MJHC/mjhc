@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Mitr', sans-serif;
+    text-decoration: none;
 }
 
 body{
@@ -44,6 +45,28 @@ h3{
     height: 100vh;
     width: 1vw;
     float: left;
+}
+
+.footer{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100vw;
+    
+}
+
+.contact{
+    float: right;
+    padding: 0.25vw;
+    color:#E5E9F0;
+    margin: 1vw;
+    border-radius: 0.25vw;
+    transition: ease-in;
+    transition-duration: 150ms;
+}
+
+.contact:hover{
+    background-color: #495267;
 }
 
 @media (orientation: portrait) {
